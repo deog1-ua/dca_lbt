@@ -1,0 +1,36 @@
+Orellana Gonzalez, Daniela Estefanía Y4150392X
+
+PARA EJECUTAR EL PROGRAMA:
+	- Se debe abrir una terminal en la carpeta general del proyecto
+	- Escribir el comando 'make'
+	- Una vez generados los archivos escribir el comando ./bugtracker
+
+UNA VEZ EJECUTANDOSE EL PROGRAMA
+	- Se obtiene un 'menú de usuario SIN logear' donde se puede:
+		* Crear un nuevo bug (donde se pide antes iniciar sesión o crear una cuenta)
+			- Al hacer esta opción el estado del programa se queda con el usuario logeado
+			- Permite poner una descripción 
+			- Nos deja elegir la prioridad que va a tener -> Imprtante, normal, menor, petición
+		* Buscar un bug, estos se buscan por el ID asignado al crear 
+			- Al encontrar el bug, se visualiza tanto la descripción como el resto de sus detalles
+			- Se le da la posibilidad al usuario de poner un comentario
+		* Entrar/registrarse se pide un correo y contraseña si existe se logea y si no existe, se crea
+		* Salir
+
+	- Opciones 'menú de usuario cliente logeado':
+		* Crear un nuevo bug -> se pide directamente la descripción y la prioridad que tiene
+		* Buscar un bug, estos se buscan por el ID asignado al crear 
+			- Al encontrar el bug, se visualiza tanto la descripción como el resto de sus detalles
+			- Se le da la posibilidad al usuario de poner un comentario
+		* Cerrar Sesión, deja el programa en un estado en el que no hay usuario
+		* Salir
+
+	- Al iniciar sesión con un usuario administrador obtenemos 'menu usuario administrador' -> dos ejemplos de credenciales son 'dani@gmail.com':'1234' y 'pepe@gmail.com':'1234'
+		* Bugs/Issues, que lista los bugs que hay y posteriormente deja ver un menú en el que se puede
+			- Cambiar estado -> Asignado, En progreso, Reabierto, Resuelto, Cerrado
+			- Asignar un desarrollador -> Obtiene una lista de administradores y se debe elegir por correo 
+			- Añadir un comentario
+			- salir
+		* Buscar un bug, muestra los detalles del bug y permite añadir un comentario 
+		* Dar de alta un administrador (Solo se puede realizar desde un rol de administrador)
+		* Salir 
